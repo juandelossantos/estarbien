@@ -305,10 +305,31 @@ box-shadow:         0px 8px 2px -5px rgba(50, 50, 50, 0.69);
   box-shadow:         0 0 10px 1px rgba(50, 50, 50, 0.69);
 }
 .form {
-  display: inline-block;
+  display: block;
+  margin: 30px 20px;
   width: 40%;
-  height: 500px;
+  float:left;
 }
+
+.form label {
+  display: inline-block;
+  width:100%;
+  padding-top: 10px;
+  margin-left: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.form .boton {
+  display: block;
+  margin: 40px auto;
+}
+
+.form input {
+  margin-left: 20px;
+  width:90%;
+}
+
 .mapa {
   display: inline-block;
   width: 55%;
@@ -328,8 +349,8 @@ box-shadow:         0px 8px 2px -5px rgba(50, 50, 50, 0.69);
 
 }
 
-.form {
-  display: block;
-  margin: 0 auto;
+.source {
+  text-decoration: underline;
 }
+
 

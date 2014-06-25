@@ -37,7 +37,7 @@
             <div class="video">
               <div class="textovideo">
                 <div>¿Y Usted, ya desayunó?</div>
-                <div class="textovideopeq">Desayunar es estar bien todo el día, <a href="invitaciondesayuno.html">lo invitamos</a></div>
+                <div class="textovideopeq">Desayunar es estar bien todo el día, <span class="source">lo invitamos</span></div>
               </div>
               <video autoplay muted preload="auto" id="videosection1">
                 <source src="media/desayuno.mp4" type="video/mp4">
@@ -54,7 +54,7 @@
               <p>Desayunar adecuadamente es el mejor inicio que podemos tener; éste buen habito alimenticio le dará la energía para afrontar su día con fuerza, optimismo y buen humor.</p>
               <p>En nuestro Club de Bienestar estamos listos para ayudarle a adquirir o mejorar este buen hábito con suplementos alimenticios de calidad mundial, buena compañía y las mejores estrategias para tener un estilo de vida saludable.</p>
               <p>¿Quiere empezar a estar bien?, lo invitamos a desayunar, no se arrepentirá.</p>
-              <a class="boton" href="invitaciondesayuno.html">Yo quiero estar Bien!</a>
+              <spam class="boton source" >Yo quiero estar Bien!</spam>
             </div>
           </section>
           <section class="sectionimg"> 
@@ -68,7 +68,7 @@
               <p>De acuerdo a nuestra actividad diaría, nuestras responsabilidades y nuestros objetivos, es posible definir las necesidades de nuestro cuerpo para alimentarse bien.</p>
               <p>En nuestro club de bienestar, encontrará la más deliciosa manera de alimentarse adecuadamente, y así lograr el estilo de vida saludable que desea y que merece.</p>
               <p>Visite nuestro club de bienestar y conozca las estrategías que le presentaremos para que Usted también pueda estar bien.</p>
-              <a class="boton" href="invitaciondesayuno.html">Yo quiero estar Bien!</a>
+              <span class="boton source">Yo quiero estar Bien!</span>
               
             </div>
           </section>
@@ -76,29 +76,31 @@
           </section>
           <section class="section4">
             <div class="tit">¡Venga, desayune con nosotros, lo invitamos!</div>
-            <div class="form">
-              <form id="invitaForm" method="post" action="invitaForm.php">
-                <div>
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" name="nombre" id="nombre" required>
-                </div>
-                <div>
-                  <label for="email">Email:</label>
-                  <input type="email" name="email" id="email" required>
-                </div>
-                <div>
-                  <label for="telefono">Teléfono:</label>
-                  <input type="tel" name="telefono" id="telefono" required>
-                </div>
-                <div>
-                  <label for="cuando">¿Cuándo quiere venir?</label>
-                  <input type="date" name="cuando" id="cuando" required>
-                </div>
-                <div>
-                  <input class="boton" type="submit" name="enviar" id="enviar" value="Yo quiero estar Bien!.">
-                </div>
-              </form>
-            </div>
+            
+              <div class="form" id="formulario">
+                <form id="invitaForm" method="post" action="invitaForm.php">
+                  <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                  </div>
+                  <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                  </div>
+                  <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" required>
+                  </div>
+                  <div>
+                    <label for="cuando">¿Cuándo quiere venir?</label>
+                    <input type="date" name="cuando" id="cuando" required>
+                  </div>
+                  <div>
+                    <input class="boton" type="submit" name="enviar" id="enviar" value="Solicitar invitación.">
+                  </div>
+                </form>
+              </div>
+            
             <div class="mapa" >
               <iframe width='100%' height='495px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/juandelossantos.iip59an0/attribution,zoompan,zoomwheel,geocoder,share.html'></iframe>
             </div>
