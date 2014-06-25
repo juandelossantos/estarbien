@@ -1,17 +1,19 @@
 function ir(){
 	var target = document.getElementById('formulario');
-	var x = target.offsetLeft;
 	var y = target.offsetTop;
-	console.log(x + "-" + y);
-	var mover = setInterval(function(){
-		for(var i = 0; i<1000; i++){
-			console.log(mover);
-			scrollTo(x,i);
-		}
-	},3000);
+	var scrollView = window.pageYOffset;
 	
+	//console.log(y +","+ scrollView);
 	
-	return false;
+
+	if (scrollView<y){
+		window.scrollBy(0,10);
+		mover = setTimeout("ir()",10);
+
+	} 
+
+		
+	
 }
 
 window.onload = function() {
