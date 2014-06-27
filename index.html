@@ -25,7 +25,7 @@
           <nav class="mainMenu">
             <ul>
               <li><a class="activo" href="inicio.html">Inicio</a></li>
-              <li><a href="">Herbalife</a></li>
+              <li><a href="herb.html">¿Qué es Herbalife?</a></li>
               <li><a href="">Estar Bien</a></li>
               <li><a href="">Un Buen Negocio</a></li>
               <li><a href="">Contacto</a></li>
@@ -37,30 +37,32 @@
             <div class="video">
               <div class="textovideo">
                 <div>¿Y Usted, ya desayunó?</div>
-                <div class="textovideopeq">Desayunar es estar bien todo el día, <span class="source">lo invitamos</span></div>
+                <div class="textovideopeq">Desayunar es estar bien todo el día. <span id="source1" class="enlace"> Leer más.</span></div>
               </div>
-              <video autoplay muted preload="auto" id="videosection1">
-                <source src="media/desayuno.mp4" type="video/mp4">
-                <source src="media/desayuno.webm" type="video/webm">
-                <source src="media/desayuno.ogv" type="video/ogg">
-              </video>
+              <div class="vid">
+                <video autoplay muted preload="auto" poster="img/postervideo.jpg" id="videosection1">
+                  <source src="media/desayuno.mp4" type="video/mp4">
+                  <source src="media/desayuno.webm" type="video/webm">
+                  <source src="media/desayuno.ogv" type="video/ogg">
+                </video>
+              </div>
             </div>
           </section>
           <section class="section2">
-            <img src="img/batido1.jpg">
+            <img src="img/batido1.jpg" id="target1">
             <div>
               <h1>¡Un buen desayuno para estar bien!</h1>
               <p>Cómo empezamos el día es uno de los factores que determinan el éxito del mismo.</p>
               <p>Desayunar adecuadamente es el mejor inicio que podemos tener; éste buen habito alimenticio le dará la energía para afrontar su día con fuerza, optimismo y buen humor.</p>
               <p>En nuestro Club de Bienestar estamos listos para ayudarle a adquirir o mejorar este buen hábito con suplementos alimenticios de calidad mundial, buena compañía y las mejores estrategias para tener un estilo de vida saludable.</p>
               <p>¿Quiere empezar a estar bien?, lo invitamos a desayunar, no se arrepentirá.</p>
-              <spam class="boton source" >Yo quiero estar Bien!</spam>
+              <spam class="boton enlace" id="source2">Leer más.</spam>
             </div>
           </section>
           <section class="sectionimg"> 
           </section>
           <section class="section3">
-            <img src="img/imgsec3.jpg">
+            <img src="img/imgsec3.jpg" id="target2">
             <div>
               
               <h1>¡Alimentarse bien, ejercitarse bien, estar bien!</h1>
@@ -68,16 +70,16 @@
               <p>De acuerdo a nuestra actividad diaría, nuestras responsabilidades y nuestros objetivos, es posible definir las necesidades de nuestro cuerpo para alimentarse bien.</p>
               <p>En nuestro club de bienestar, encontrará la más deliciosa manera de alimentarse adecuadamente, y así lograr el estilo de vida saludable que desea y que merece.</p>
               <p>Visite nuestro club de bienestar y conozca las estrategías que le presentaremos para que Usted también pueda estar bien.</p>
-              <span class="boton source">Yo quiero estar Bien!</span>
+              <span class="boton enlace" id="source3">Yo quiero estar bien.</span>
               
             </div>
           </section>
           <section class="sectionimg2"> 
           </section>
-          <section class="section4" id="referencia">
+          <section class="section4">
             <div class="tit">¡Venga, desayune con nosotros, lo invitamos!</div>
             
-              <div class="form" id="formulario">
+              <div class="form" id="target3">
                 <form id="invitaForm" method="post" action="invitaForm.php">
                   <div>
                     <label for="nombre">Nombre:</label>
@@ -96,7 +98,7 @@
                     <input type="date" name="cuando" id="cuando" required>
                   </div>
                   <div>
-                    <input class="boton" type="submit" name="enviar" id="enviar" value="Solicitar invitación.">
+                    <input class="boton enlace" type="submit" name="enviar" id="enviar" value="Solicitar invitación.">
                   </div>
                 </form>
               </div>
@@ -107,11 +109,11 @@
           </section>
         </div>
         <footer class="footer clearfix">
-          2014
+          <h2>2014. <a href="mailto:yoquiero@estarbien.co">Carmen Patricia Sierra Puentes</a> - Distribuidor Independiente de <a href="http://www.herbalife.com.co" target="_blank">Herbalife</a>&copy;.</h2>
         </footer>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
+        <script src="js/plugins.js"></script>-->
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
