@@ -48,14 +48,17 @@ function defineInicioFinal(){
 	var s1 = document.getElementById('source1');
 	var s2 = document.getElementById('source2');
 	var s3 = document.getElementById('source3');
-	
+	var s4 = document.getElementById('source4');
+
 	var t1 = document.getElementById('target1');
 	var t2 = document.getElementById('target2');
 	var t3 = document.getElementById('target3');
+	var t4 = document.getElementById('target4');
 
 	agregarEvento(s1,'click',function(){ir(t1)});
 	agregarEvento(s2,'click',function(){ir(t2)});
 	agregarEvento(s3,'click',function(){ir(t3)});
+	agregarEvento(s4,'click',function(){ir(t4)});
 	
 } 
 
@@ -76,7 +79,9 @@ function validaForm() {
 
 function init(){
 	defineInicioFinal();
+	if(document.getElementById('invitaForm') != undefined) {
 	document.getElementById('invitaForm').onsubmit = validaForm;
+}
 }
 
 window.onload = init;

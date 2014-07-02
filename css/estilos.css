@@ -499,6 +499,27 @@ video#videosection1 {
   max-height: 600px;
   overflow: hidden;
 }
+.contieneslider1{
+display: block;
+position: relative;
+width:200px;
+height: 100px;
+background-color: #fff;
+z-index: 1002;
+top:80px;
+left:10px;
+}
+
+.contieneslider2{
+display: block;
+position: absolute;
+width:200px;
+height: 100px;
+background-color: #fff;
+z-index: 1002;
+top:80px;
+left:210px;
+}
 
 .boton-slider{
   position: absolute;
@@ -590,6 +611,7 @@ video#videosection1 {
 .boton-slider:nth-child(7):checked ~ .contenedor-img{
   left:-300%;
 }
+
 
 /* FIN SLIDER */
 
