@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/mislider.css"> 
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
     <body>
@@ -33,33 +34,40 @@
           </nav>
         </header>
         <div class="contenedor">
-          <section class="section1">
-            <div class="slider">
-              <input type="radio" class="boton-slider" name="boton-slider" checked>
-              <label></label>
-              <input type="radio" class="boton-slider" name="boton-slider">
-              <label></label>
-              <input type="radio" class="boton-slider" name="boton-slider">
-              <label></label>
-              <input type="radio" class="boton-slider" name="boton-slider">
-              <label></label>
-              
-              <div class="contenedor-img cuatro-imagenes">
-                <div class="contieneslider1" id="source4">
-                Un botón
-                </div>
-                <img src="img/slider1.jpg">
-                <div class="contieneslider2" id="source4">
-                Otro botón
-                </div>
-                <img src="img/slider2.jpg">
-                <img src="img/slider3.jpg">
-                <img src="img/slider4.jpg">
-              </div>
+          <section>
+            <div class="contieneslider">
+              <div class="slider" id="slider">
+                <figure>
+                  <img src="img/slider1.jpg">
+                  <figcaption>
+                    <h3>Titulo Foto</h3>
+                    <p>Comentario foto</p>
+                    <span class="botonslider enlace" id="source4">Leer más</span>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="img/slider2.jpg">
+                  <!--<figcaption>Este es el texto del slider 2</figcaption>-->
+                </figure>
+                <figure>
+                  <img src="img/slider3.jpg">
+                  <figcaption>Este es el texto del slider 3</figcaption>
+                </figure>
+                <figure>
+                  <img src="img/slider4.jpg">
+                  <figcaption>Este es el texto del slider 4</figcaption>
+                </figure>
+              </div> 
+            </div>
+            <div class="controlslider clearfix">
+              <button id="btn1"></button></li>
+              <button id="btn2"></button></li>
+              <button id="btn3"></button></li>
+              <button id="btn4"></button></li>      
             </div>
           </section>
           <section class="section2">
-            <div class="tit" id="target4"><h2>La Combinación básica para ¡estar bien!</h2></div>
+            <div class="tit"><h2>La Combinación básica para ¡estar bien!</h2></div>
             <div class="imagender"><img src="img/formulabasica.jpg"></div>
             <div class="textoformula">
               <h3>Batido Nutricional</h3>
@@ -71,7 +79,7 @@
           </section>
           <div class="sectionimg3">
           </div>
-          <section class="section3 clearfix">
+          <section class="section3 clearfix" id="target4">
             
             <div>
             <img src="img/imgsec3estarbien.jpg">
@@ -102,6 +110,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>-->
         <script src="js/main.js"></script>
+        <script src="js/mislider.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
