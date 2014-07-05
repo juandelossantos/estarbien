@@ -81,7 +81,8 @@ function init(){
 	defineInicioFinal();
 	if(document.getElementById('invitaForm') != undefined) {
 	document.getElementById('invitaForm').onsubmit = validaForm;
-}
+	}
+	
 }
 
 window.onload = init;

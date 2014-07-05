@@ -60,7 +60,7 @@ function activaSlider(){
 	}, 4000);
 }
 
-function init(){
+function ejecutaSlider(){
 	'use strict';
 	btn1.onclick = function(){mover(0)};
   btn2.onclick = function(){mover("-100%")};
@@ -71,4 +71,4 @@ function init(){
 
 }
 
-window.onload = init;
+window.onload = ejecutaSlider;
