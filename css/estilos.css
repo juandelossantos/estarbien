@@ -155,23 +155,23 @@ box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.75);
   background-color: #69c123;
   -moz-animation-duration: 10s;
   -moz-animation-name: slidein;
-  
+
   -webkit-animation-duration: 10s;
   -webkit-animation-name: slidein;
-    
+
 }
 
 @-moz-keyframes slidein {
   from {
     margin-top: 70px;
-    
+
     margin-left: -100%;
 
   }
 
   to {
     margin-top: 70px;
-    
+
     margin-left: 0;
 
   }
@@ -180,14 +180,14 @@ box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.75);
 @-webkit-keyframes slidein {
   from {
     margin-top: 70px;
-    
+
     margin-left: -100%;
 
   }
 
   to {
     margin-top: 70px;
-    
+
     margin-left: 0;
 
   }
@@ -370,7 +370,7 @@ video#videosection1 {
   margin-right: 30px;
   font-weight: 300;
   font-size: 1.5em;
-  
+
 }
 
 .sectionimg2 {
@@ -423,7 +423,7 @@ video#videosection1 {
   background-color: #fff;
   color: #69C123;
   padding:10px;
-  
+
   -webkit-box-shadow: 0 0 10px 1px rgba(50, 50, 50, 0.69);
   -moz-box-shadow:    0 0 10px 1px rgba(50, 50, 50, 0.69);
   box-shadow:         0 0 10px 1px rgba(50, 50, 50, 0.69);
@@ -489,6 +489,12 @@ video#videosection1 {
   cursor: pointer;
 }
 
+.formulario {
+  display: block;
+  margin-top: 80px;
+
+}
+
 /* Ajuste slider */
 
 .slider figure {
@@ -497,6 +503,7 @@ video#videosection1 {
 
 .slider figure figcaption {
   bottom: 180px;
+  font-weight: 300;
 }
 
 .botonslider {
@@ -509,7 +516,7 @@ video#videosection1 {
   border-radius: 3px;
   -webkit-transition: all 0.6s ease;
           transition: all 0.6s ease;
-  z-index: 500;
+  text-decoration: underline;
 
 }
 
@@ -536,4 +543,3 @@ video#videosection1 {
 }
 
 /* Fin Ajuste slider */
-

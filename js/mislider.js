@@ -23,25 +23,25 @@ function mover(left){
   	btn2.style.backgroundColor=colorBoton;
   	btn3.style.backgroundColor=colorBoton;
   	btn4.style.backgroundColor=colorBoton;
-  	
+
   } else if (left === "-100%") {
   	btn1.style.backgroundColor=colorBoton;
   	btn2.style.backgroundColor=nuevoColorBoton;
   	btn3.style.backgroundColor=colorBoton;
   	btn4.style.backgroundColor=colorBoton;
-  	
+
   } else if (left === "-200%") {
   	btn1.style.backgroundColor=colorBoton;
   	btn2.style.backgroundColor=colorBoton;
   	btn3.style.backgroundColor=nuevoColorBoton;
   	btn4.style.backgroundColor=colorBoton;
-  	
+
   } else if (left === "-300%") {
   	btn1.style.backgroundColor=colorBoton;
   	btn2.style.backgroundColor=colorBoton;
   	btn3.style.backgroundColor=colorBoton;
   	btn4.style.backgroundColor=nuevoColorBoton;
-  	
+
   }
 
 }
@@ -57,7 +57,7 @@ function activaSlider(){
 		if (pos === 400) {
 			pos = 0;
 		};
-	}, 4000);
+	}, 10000);
 }
 
 function ejecutaSlider(){
@@ -67,8 +67,6 @@ function ejecutaSlider(){
   btn3.onclick = function(){mover("-200%")};
   btn4.onclick = function(){mover("-300%")};
   activaSlider();
-  
+
 
 }
-
-window.onload = ejecutaSlider;
