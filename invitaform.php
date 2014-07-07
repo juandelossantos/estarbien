@@ -26,7 +26,7 @@ $email_message .= "Horario preferido: " . $_POST['horarioPreferido'] . "\n\n";
 $email_message .= "Comentarios: " . $_POST['pregunta'] . "\n\n";
 
 $email_from = $_POST['mail'];
-echo($email_from);
+
 // Ahora se envía el e-mail usando la función mail() de PHP
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .

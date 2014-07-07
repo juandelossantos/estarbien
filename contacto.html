@@ -34,7 +34,7 @@
         </header>
         <div class="contenedor">
           <section class="formulario">
-            <form id="formularioContacto" name="formularioContacto" method="post" action="enviadatos.php">
+            <form name="formularioContacto" method="post" action="enviadatos.php">
               <div>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -49,14 +49,14 @@
               </div>
               <div>
                 <label for="horarioPreferido"></label>
-                <input type="text" name="horarioPreferido" value="AM/PM">
+                <input type="text" name="horarioPreferido" placeholder="AM/PM">
               </div>
               <div>
                 <label for="pregunta">¿Qué le gustaría saber?</label>
                 <textarea name="pregunta" id="pregunta" cols="30" rows="10"></textarea>
               </div>
               <div>
-                <input type="submit" id="enviar" value="Enviar" class="boton enlace">
+                <input type="submit" value="Enviar" class="boton enlace">
               </div>
             </form>
           </section>
