@@ -11,7 +11,7 @@
         <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/estilos.min.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
     <body>
@@ -74,7 +74,7 @@
     </section>
     </div>
     <footer class="footer clearfix">
-      <h2>2014. <a href="mailto:yoquiero@estarbien.co">yowuiero@estarbien.co</a> - Distribuidor Independiente de <a href="http://www.herbalife.com.co" target="_blank">Herbalife</a>&copy;.</h2>
+      <h2>2014. <a href="mailto:yoquiero@estarbien.co">yoquiero@estarbien.co</a> - Distribuidor Independiente de <a href="http://www.herbalife.com.co" target="_blank">Herbalife</a>&copy;.</h2>
     </footer>
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
@@ -83,12 +83,15 @@
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-52625311-1', 'auto');
+            ga('create', 'UA-52623920-1', 'auto', {'name': 'estarBien'});
+            ga('send', 'pageview');
+            ga('estarBien.send', 'pageview');
     </script>
 </body>
 </html>
