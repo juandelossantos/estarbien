@@ -413,6 +413,22 @@ video#videosection1 {
   box-shadow:         inset 0px 8px 9px -5px rgba(50, 50, 50, 0.69);
 }
 
+.formulario {
+  background-color: #f6f7f6;
+  background-image: url('../img/contacto.jpg');
+  background-size: 80%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 0;
+  font-weight: 300;
+  color: #488518;
+  -webkit-box-shadow: inset 0px 8px 9px -5px rgba(50, 50, 50, 0.69);
+  -moz-box-shadow:    inset 0px 8px 9px -5px rgba(50, 50, 50, 0.69);
+  box-shadow:         inset 0px 8px 9px -5px rgba(50, 50, 50, 0.69);
+  overflow: hidden;
+}
+
 .tit {
   display: block;
   width: 100%;
@@ -428,8 +444,16 @@ video#videosection1 {
   -moz-box-shadow:    0 0 10px 1px rgba(50, 50, 50, 0.69);
   box-shadow:         0 0 10px 1px rgba(50, 50, 50, 0.69);
 }
+
+.sectionform{
+  display:block;
+  margin:0 auto;
+  text-align:center;
+}
+
 .form {
   display: block;
+  background-color: rgba(255,255,255,0.4);
   margin: 30px 20px;
   width: 40%;
   float:left;
@@ -447,9 +471,11 @@ video#videosection1 {
 .form .boton {
   display: block;
   margin: 40px auto;
+  float: none;
 }
 
-.form input {
+.form input,
+.form textarea  {
   margin-left: 20px;
   width:90%;
 }
@@ -492,7 +518,10 @@ video#videosection1 {
 .formulario {
   display: block;
   margin-top: 80px;
+}
 
+.formulario .form {
+  margin: 10px 20px 0px 20px;
 }
 
 /* Ajuste slider */
@@ -524,6 +553,23 @@ video#videosection1 {
   background-color: #fff;
   box-shadow: 3px 3px 1px rgba(50,50,50, 0.4);
   color:#444;
+}
+
+.msg {
+  display:block;
+  width: 60%;
+  margin:0 auto;
+  height: 581px;
+  background-image: url("../img/yosoy_hrbl-1.jpg");
+  background-position:left bottom;
+  background-repeat:no-repeat;
+  color: #488518;
+  text-align: right;
+}
+.msg h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-top:100px
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {

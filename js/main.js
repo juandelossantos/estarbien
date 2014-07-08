@@ -1,5 +1,5 @@
-	
-// Funciones para escuchar los eventos 
+
+// Funciones para escuchar los eventos
 function agregarEvento(elemento, tipo, funcion){
 	'use strict';
 	if (elemento && elemento.addEventListener) {
@@ -24,21 +24,21 @@ function ir(target){
 	var y = target.offsetTop - 80; // se resta la altura del header para ver adecuadamente los títulos
 	var scrollView = window.pageYOffset;
 	var dif = y-scrollView;
-	
+
 	// aqui se realiza el scroll
 	if (scrollView < y){
 		window.scrollBy(0,12);
 		var mover = setTimeout(function(){
-			ir(target);	
+			ir(target);
 		},10);
 		//se asigna la nueva posición de la página a una nueva variable.
 		var newScrollview = window.pageYOffset;
-	} 
+	}
 	//con esta parte se determina si ya se llegó al target deseado y se para la ejecución del timeOut.
 	if (scrollView === newScrollview) {
 		clearTimeout(mover);
-	}	
-	
+	}
+
 }
 /* 	Esta función determina los puntos iniciales y finales para los scroll
 	deseados y ejecuta la funcion ir() que hace el scroll, si se desea incluir más saltos se debe identificar en el html los ids inicio y fin y aquí crear las variables y activar el listener.
@@ -59,8 +59,8 @@ function defineInicioFinal(){
 	agregarEvento(s2,'click',function(){ir(t2)});
 	agregarEvento(s3,'click',function(){ir(t3)});
 	agregarEvento(s4,'click',function(){ir(t4)});
-	
-} 
+
+}
 
 function validaForm() {
 	var nombre = document.getElementById('nombre').value;
@@ -69,12 +69,11 @@ function validaForm() {
 	var cuando = document.getElementById('cuando').value;
 
 	if (nombre && email && telefono && cuando != " ") {
-		var r =confirm("Enviar?");
-		if (r == true) {alert('enviado');}
+		return true;
 	} else {
-		alert('datos insuficientes');
+		alert('Por favor revise los datos introducidos y vuelva a intentarlo...');
+		return false;
 	}
-	return false; //cuando se termine de programar la validación quitar el return para que pueda procesar el form en php.
 }
 
 function init(){
@@ -82,7 +81,7 @@ function init(){
 	if(document.getElementById('invitaForm') != undefined) {
 	document.getElementById('invitaForm').onsubmit = validaForm;
 	}
-	
+
 }
 
 window.onload = init;
