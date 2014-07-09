@@ -31,40 +31,73 @@
       <section class="sectionform">
       <div class="msg">
       <?php
+      require 'PHPMailerAutoload.php';
+      if (isset($_POST['email'])) {
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->Host = 'personal133.conain.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'yoquiero@estarbien.co';
+        $mail->Password = 'Desp2006!';
+        $mail->SMTPSecure = 'tls';
+        $mail->From = 'info@tuclubdenutricionps.com';
+        $mail->FromName = 'yo quiero estar bien';
+        $mail->addAddress('yoquiero@estarbien.co');
+        $mail->addAddress('tico_ma21@yahoo.es');
+        $mail->isHTML(true);
 
-      if(isset($_POST['email'])) {
+        $mail->Subject = 'Solicitud de invitacion a desayuno gratis desde la web:';
 
-      // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-      $email_to = "yoquiero@estarbien.co";
-      $email_subject = "Solicitud de invitación a desayuno gratis desde la web";
+        $mail->Body    = '<h1>Detalles de la solicitud:</h1>'.'<strong>Nombre:</strong> ' . $_POST['nombre'].'<br/>'.'<strong>E-mail: </strong>' . $_POST['email'].'<br/>'.'<strong>Tel&eacute;fono: </strong>'. $_POST['telefono'] .'<br/>'.'<strong>Cuando desea venir:</strong> ' . $_POST['cuando'] .'<br/><br/>';
 
-      // Aquí se deberían validar los datos ingresados por el usuario
-      if(!isset($_POST['nombre']) ||
-      !isset($_POST['telefono']) ||
-      !isset($_POST['email']) ||
-      !isset($_POST['cuando'])) {
+        $mail->AltBody = 'Detalles del formulario de contacto:\n\n'.'Nombre: ' . $_POST['nombre'] . '\n' . 'E-mail: ' . $_POST['mail'] . '\n' . 'Teléfono: ' . $_POST['telefono'] . '\n' . 'Cuando desea venir: ' . $_POST['cuando'] . '\n\n';
 
-      echo "<h4>Ocurrió un error y el formulario no ha sido enviado. </h4>";
-      echo "<p>Por favor, vuelva atrás y verifique la información ingresada</p >";
-      die();
+
+        if(!$mail->send()) {
+          echo 'El mensaje no pudo ser enviado';
+          echo 'Error: ' . $mail->ErrorInfo;
+        } else {
+          echo '<h4>Los datos se han enviado correctamente.</h4><p>¡Estaremos en contacto!.</p>';
+        }
       }
 
-      $email_message = "Detalles del formulario de contacto:\n\n";
-      $email_message .= "Nombre: " . $_POST['nombre'] . "\n";
-      $email_message .= "E-mail: " . $_POST['email'] . "\n";
-      $email_message .= "Teléfono: " . $_POST['telefono'] . "\n";
-      $email_message .= "Cuando: " . $_POST['cuando'] . "\n\n";
 
-      $email_from = $_POST['email'];
 
-      // Ahora se envía el e-mail usando la función mail() de PHP
-      $headers = 'From: '.$email_from."\r\n".
-      'Reply-To: '.$email_from."\r\n" .
-      'X-Mailer: PHP/' . phpversion();
-      @mail($email_to, $email_subject, $email_message, $headers);
 
-      echo "<h4>Los datos se han enviado correctamente.</h4><p>¡Estaremos en contacto!.</p>";
-      }
+
+      // if(isset($_POST['email'])) {
+
+      // // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
+      // $email_to = "yoquiero@estarbien.co";
+      // $email_subject = "Solicitud de invitación a desayuno gratis desde la web";
+
+      // // Aquí se deberían validar los datos ingresados por el usuario
+      // if(!isset($_POST['nombre']) ||
+      // !isset($_POST['telefono']) ||
+      // !isset($_POST['email']) ||
+      // !isset($_POST['cuando'])) {
+
+      // echo "<h4>Ocurrió un error y el formulario no ha sido enviado. </h4>";
+      // echo "<p>Por favor, vuelva atrás y verifique la información ingresada</p >";
+      // die();
+      // }
+
+      // $email_message = "Detalles del formulario de contacto:\n\n";
+      // $email_message .= "Nombre: " . $_POST['nombre'] . "\n";
+      // $email_message .= "E-mail: " . $_POST['email'] . "\n";
+      // $email_message .= "Teléfono: " . $_POST['telefono'] . "\n";
+      // $email_message .= "Cuando: " . $_POST['cuando'] . "\n\n";
+
+      // $email_from = $_POST['email'];
+
+      // // Ahora se envía el e-mail usando la función mail() de PHP
+      // $headers = 'From: '.$email_from."\r\n".
+      // 'Reply-To: '.$email_from."\r\n" .
+      // 'X-Mailer: PHP/' . phpversion();
+      // @mail($email_to, $email_subject, $email_message, $headers);
+
+      // echo "<h4>Los datos se han enviado correctamente.</h4><p>¡Estaremos en contacto!.</p>";
+      // }
       ?>
       <a class="boton enlace" href="index.html">Regresar</a>
       </div>
